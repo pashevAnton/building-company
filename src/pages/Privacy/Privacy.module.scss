@@ -1,0 +1,30 @@
+.bg {
+  background-color: #6c9380;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 20px 15px;
+
+  > h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  > div {
+    > p {
+      margin-bottom: 8px;
+    }
+    > h2 {
+      margin-bottom: 8px;
+    }
+    color: #fff;
+  }
+}
+
+.description {
+
+}

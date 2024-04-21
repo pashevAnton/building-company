@@ -1,0 +1,149 @@
+.bg {
+  background-color: #8eb5a2;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+.wrapper {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.pricingCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.pricingCard {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 350px;
+  height: 400px;
+
+  .imageWrapper {
+    height: 70%;
+    margin-bottom: 20px;
+    width: 90%;
+    > img {
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  > h4 {
+    color: #6c9380;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.pricingCard:hover {
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 2rem;
+  color: #6c9380;
+}
+
+.description {
+  font-size: 20px;
+  color: #777;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #6c9380;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background-color 0.3s;
+  width: 90%;
+  &:hover {
+    background-color: #39634f;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricingCard {
+    padding: 15px 10px 35px;
+    width: 40%;
+    height: 300px;
+
+    > h4 {
+      font-size: 16px;
+    }
+
+    > img {
+      width: 80%;
+    }
+  }
+
+  .price {
+    font-size: 1.5rem;
+    color: #6c9380;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .pricingCard {
+    > h4 {
+      font-size: 13.5px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pricingCard {
+    width: 80%;
+    height: 370px;
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.3rem;
+    }
+
+    > h4 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pricingCard {
+    height: 300px;
+    width: 80%;
+
+    > img {
+      height: 50%;
+    }
+  }
+}

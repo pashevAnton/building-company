@@ -1,0 +1,5 @@
+export const MAIN_PAGE = '/'
+export const PORTFOLIO = '/portfolio'
+export const SERVICES = '/services'
+export const SERVICE = '/services/service'
+export const PRIVACY = '/privacy'

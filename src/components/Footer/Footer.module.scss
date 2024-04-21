@@ -1,0 +1,175 @@
+.bg {
+  background-color: #6c9380;
+  padding: 30px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+.wrapper {
+  > .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    > .footerLogo {
+      width: 300px;
+    }
+
+    > .footerContact {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      color: #fff;
+
+      > h2 {
+        text-align: center;
+      }
+
+      > p {
+        font-size: 20px;
+
+      }
+    }
+  }
+
+  > .footerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+
+    > a {
+      color: #fff;
+      margin-right: 0;
+    }
+  }
+}
+
+.links {
+  font-size: 1rem;
+  margin-right: 32px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  transition: all 0.2s ease;
+
+
+  &:last-child {
+    font-size: 1.2rem;
+
+    &:hover {
+      color: #39634f;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footerLogo {
+    width: 270px;
+  }
+  .wrapper {
+    > .footerBottom {
+      font-size: 1.1rem;
+    }
+
+    > .footerContent {
+      > .footerContact {
+        > p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .links {
+    font-size: 1rem;
+    margin-right: 32px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s ease;
+
+
+    &:last-child {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    > .footerBottom {
+      font-size: 0.9rem;
+    }
+
+    > .footerContent {
+      > .footerLogo {
+        width: 200px;
+      }
+      > .footerContact {
+        row-gap: 2px;
+        > p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+   .links {
+    font-size: 0.9rem;
+    margin-right: 32px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s ease;
+
+
+    &:last-child {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    padding: 20px 0;
+  }
+  .wrapper {
+    > .footerBottom {
+      font-size: 0.7rem;
+    }
+
+    > .footerContent {
+      > .footerLogo {
+        width: 130px;
+      }
+      > .footerContact {
+        row-gap: 2px;
+        > p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+   .links {
+    font-size: 0.7rem;
+    margin-right: 32px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s ease;
+
+
+    &:last-child {
+      font-size: 0.7rem;
+    }
+  }
+}

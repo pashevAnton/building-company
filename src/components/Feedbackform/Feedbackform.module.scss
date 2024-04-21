@@ -1,0 +1,52 @@
+input {
+  border: none;
+  outline: none;
+}
+
+.bg {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  border: 3px #6c9380 solid;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 40px 40px;
+  width: 500px;
+
+  > h2 {
+    color: #6c9380;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    padding: 30px;
+  }
+  .wrapper {
+    width: 280px;
+    > h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+

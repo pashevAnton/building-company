@@ -1,0 +1,206 @@
+.bg {
+  background-color: #fff;
+  margin-top: 60px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+}
+
+.wrapper {
+
+  > h2 {
+    color: #6c9380;
+    font-size: 32px;
+  }
+
+  > .reasons {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+
+
+    > .card {
+      padding: 20px;
+      box-shadow: 0 1px 6px 0 #bdbdbd;
+      height: 200px;
+      transition: all 0.4s ease;
+      border-radius: 5px;
+
+      > h4 {
+        font-size: 1.5rem;
+        color: #6c9380;
+        margin-bottom: 10px;
+      }
+
+      > p {
+        font-size: 1.08rem;
+      }
+
+      &:hover {
+        background-color: #6c9380;
+        > h4 {
+          color: #fff;
+        }
+        > p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .bg {
+    margin-top: 40px;
+  }
+
+  .wrapper {
+    
+    > h2 {
+      text-align: center;
+    }
+    .reasons {
+
+      > .card {
+
+        > h4 {
+          font-size: 1.4rem;
+        }
+
+        > p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+
+  .bg {
+    margin-top: 40px;
+  }
+
+  .wrapper {
+
+    > h2 {
+      text-align: center;
+    }
+    .reasons {
+
+      > .card {
+        height: 240px;
+        > h4 {
+          font-size: 1.4rem;
+        }
+
+        > p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .bg {
+    margin-top: 30px;
+  }
+
+  .wrapper {
+
+    > h2 {
+      text-align: center;
+      font-size: 30px;
+    }
+    .reasons {
+
+      > .card {
+        padding-top: 10px;
+        height: 230px;
+        > h4 {
+          font-size: 1rem;
+          margin-bottom: 6px;
+        }
+
+        > p {
+          font-size: 0.7rem;
+        }
+
+        &:nth-child(3){
+          height: 175px;
+        }
+
+        &:nth-child(4){
+          height: 175px;
+        }
+        &:nth-child(5){
+          height: 175px;
+        }
+
+        &:nth-child(6){
+          height: 175px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .bg {
+    margin-top: 20px;
+  }
+
+  .wrapper {
+
+    > h2 {
+      text-align: center;
+      font-size: 25px;
+    }
+    .reasons {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+
+      > .card {
+        padding-top: 10px;
+        height: 160px;
+        > h4 {
+          font-size: 1rem;
+          margin-bottom: 6px;
+        }
+
+        > p {
+          font-size: 0.7rem;
+        }
+
+        &:nth-child(3){
+          height: 140px;
+        }
+
+        &:nth-child(4){
+          height: 140px;
+        }
+
+
+        &:nth-child(5){
+          display: none;
+        }
+
+        &:nth-child(6){
+          display: none;
+        }
+      }
+    }
+  }
+}
+
